@@ -3975,6 +3975,8 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-shadow: 1px 1px #fff;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -9986,7 +9988,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 6rem 0 4rem 0;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10481,4 +10483,129 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.contact-pageheader {
+    position: relative;
+    background: rgba(145, 238, 226, 1);
+    background: -moz-linear-gradient(left, rgba(145, 238, 226, 1) 0%, rgba(145, 238, 226, 1) 22%, rgba(145, 238, 226, 1) 31%, rgba(145, 238, 226, 1) 39%, rgba(57, 196, 182, 1) 71%, rgba(57, 196, 182, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(145, 238, 226, 1)), color-stop(22%, rgba(145, 238, 226, 1)), color-stop(31%, rgba(145, 238, 226, 1)), color-stop(39%, rgba(145, 238, 226, 1)), color-stop(71%, rgba(57, 196, 182, 1)), color-stop(100%, rgba(57, 196, 182, 1)));
+    background: -webkit-linear-gradient(left, rgba(145, 238, 226, 1) 0%, rgba(145, 238, 226, 1) 22%, rgba(145, 238, 226, 1) 31%, rgba(145, 238, 226, 1) 39%, rgba(57, 196, 182, 1) 71%, rgba(57, 196, 182, 1) 100%);
+    background: -o-linear-gradient(left, rgba(145, 238, 226, 1) 0%, rgba(145, 238, 226, 1) 22%, rgba(145, 238, 226, 1) 31%, rgba(145, 238, 226, 1) 39%, rgba(57, 196, 182, 1) 71%, rgba(57, 196, 182, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(145, 238, 226, 1) 0%, rgba(145, 238, 226, 1) 22%, rgba(145, 238, 226, 1) 31%, rgba(145, 238, 226, 1) 39%, rgba(57, 196, 182, 1) 71%, rgba(57, 196, 182, 1) 100%);
+    background: linear-gradient(to right, rgba(145, 238, 226, 1) 0%, rgba(145, 238, 226, 1) 22%, rgba(145, 238, 226, 1) 31%, rgba(145, 238, 226, 1) 39%, rgba(57, 196, 182, 1) 71%, rgba(57, 196, 182, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#91eee2', endColorstr='#39c4b6', GradientType=1);
+    margin-bottom: 70px;
+}
+
+.contact-caption {
+    position: relative;
+    top: 180px;
+}
+
+.contact-title {
+    font-family: 'PT Serif', serif;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 40px;
+    line-height:80px;
+}
+
+.contact-caption-text {
+    font-size: 23px;
+    color: #272d2c;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    top: 100px;
+    -webkit-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.29);
+}
+
+.contact-section {
+    margin-bottom: 15px;
+    margin-top: 35px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e9e8;
+}
+
+.contact-section .contact-icon {
+    float: left;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 25px;
+    color: #34b2a4;
+    padding-right: 20px;
+    position: initial;
+}
+
+.contact-section .contact-info {
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.contact-social {}
+
+.contact-social ul {}
+
+.contact-social ul li {
+    float: left;
+}
+
+.contact-social ul li a {
+    font-size: 16px;
+    padding-right: 10px;
+    color: #6b6c6d;
+}
+
+.contact-social ul li a:hover {
+    color: #0084bf;
+}
+
+.contact-elements{
+  margin: auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
