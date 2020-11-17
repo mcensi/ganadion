@@ -117,14 +117,14 @@
                 <div class="card col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-12 col-sm-12 col-xs-12 contact-elements">
                 <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-8 col-sm-10 col-xs-12 contact-elements">
                     <div class="contact-section">
-                        <div class="contact-icon"><button class="btn contact-icon" data-clipboard-text="Saladillo, Buenos Aires, Argentina" data-toggle="tooltip" data-placement="bottom" title="Copiar"><i class="fa fa-map-marker"></i></div></button>
+                        <div class="contact-icon"><button class="btn contact-icon" data-clipboard-text="Saladillo, Buenos Aires, Argentina" data-toggle="tooltip" data-placement="bottom" title="Copiar" id="boton-ubicacion" onclick="lblUbicacion()"><i class="fa fa-map-marker"></i></div></button>
                         <div class="contact-info">
                             <p>Saladillo, Buenos Aires, Argentina</p>
                         </div>
                     </div>
                      <div class="contact-section">
                         <div class="contact-icon">
-                            <button class="btn contact-icon" data-clipboard-text="(+54) 2344-503852" data-toggle="tooltip" data-placement="bottom" title="Copiar">
+                            <button class="btn contact-icon" data-clipboard-text="(+54) 2344-503852" data-toggle="tooltip" data-placement="bottom" title="Copiar" id="boton-telefono" onclick="lblTelefono()">
                             <i class="fa fa-phone"></i>
 
                         </div>
@@ -135,8 +135,8 @@
                         </div>
                     </div>
                      <div class="contact-section">
-                        <div class="contact-icon"><button class="btn contact-icon" data-clipboard-text="marianocensi01@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Copiar"><i class="fa fa-envelope"></i></div></button>
-                        <div class="contact-info">
+                        <div class="contact-icon"><button class="btn contact-icon" data-clipboard-text="marianocensi01@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Copiar" id="boton-mail" onclick="lblMail()"><i class="fa fa-envelope"></i></div></button>
+                        <div class="contact-info" >
                             <p>marianocensi01@gmail.com</p>
                         </div>
                     </div>
@@ -168,8 +168,7 @@
         <script src="js/scripts.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script>new ClipboardJS('.btn');</script>
-        <script>$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})</script>
+        <script>$(function () {$('[data-toggle="tooltip"]').tooltip()})</script>
+        <script src="js/copied.js"></script>
     </body>
 </html>
