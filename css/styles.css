@@ -10609,3 +10609,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   visibility: visible;
   opacity: 1;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
